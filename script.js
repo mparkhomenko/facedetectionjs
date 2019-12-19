@@ -50,29 +50,6 @@ async function start() {
     canvas.height = prefsize.h;
     context.drawImage(image, prefsize.x, prefsize.y, prefsize.w, prefsize.h, 1, 1, canvas.width, canvas.height);
     let data = canvas.toDataURL();
-    console.log(selector)
+    console.log(data)
   })
 }
-
-// $("#form").submit(function(e) {
-//   e.preventDefault();
-//   formData = new FormData($(this)[0]);
-//   let blob = dataURLtoBlob(canvas.toDataURL('image/png'));
-//   //---Add file blob to the form data
-//   formData.append("cropped_image[]", blob);
-//   $.ajax({
-//     url: "whatever.php",
-//     type: "POST",
-//     data: formData,
-//     contentType: false,
-//     cache: false,
-//     processData: false,
-//     success: function(data) {
-//       alert("Success");
-//     },
-//     error: function(data) {
-//       alert("Error");
-//     },
-//     complete: function(data) {}
-//   });
-// });
